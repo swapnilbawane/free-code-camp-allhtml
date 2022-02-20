@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HTML 5 elements. </title>
+</head>
+<body>
+    
+    
+    <p> This is to let you know of the different elements in html5 file. Let's begin with main then anchor element, link element, image elements.  
+    </p>
+
+<main>
+    <h1> Hello h1 heading. </h1>
+    <p> Hello main first paragraph. </p>
+    <p> Here are the other elements: header, footer, nav, video, article, section and others. </p>
+</main>
+
+<hr> 
+
+<p id="images-explanation"> Lets begin with the image tag. < img src = "" accesibility text ie alt text = /> Image is a self closing tag that is we do not need a /img tag at end. Image is an inline element meaning it does not occupy the entire row or line. We can change it to block element by using display: block using css though. Alt text helps if the image fails to load then the alt text is shown instead.  </p>
+
+<img src="" alt="....Hi the image is missing!"> 
+
+<a href="#recap"> Go to recap </a>
+
+<hr> 
+
+<p id="link-explanation"> Let's see how link works here. Link works by < a href = "link"> Text to be displayed for link. < /a> 
+Again a element is inline element and occupies only the space in the line. If you use target = "_blank" it will open in a new window. If you use # it leads to dead link. Let us try Google</p>
+<a href="https://google.com" target="blank"> Google </a> 
+<a href="#"> Example of dead link </a>
+
+<a href="#recap"> Go to recap </a>
+
+<hr> 
+
+<p> Now this is interesting. You can create internal sections or point to interal sections or jump to internal sections using the anchor element. What does it mean? It means that you can give a particular id to an element anywhere and using a href tag you can reach there easily. Let us give tags for above and see how it goes. 
+
+<a href="#recap"> Go to recap </a>
+</p>
+
+<p> 
+    For details on Images click <a href="#images-explanation"> How image tag works </a>
+    For details on Links click <a href="#link-explanation"> How a href tag works </a>
+    Tip: If you hover over the links you can see the link it is pointing to in the bottom left of the browser. You can see the visible effects of how the page navigates or move to the particular section if the page is long enough. For one page or screen visible page the effect may not be visible. 
+    
+    <p> Note: # is used to refer to id selectors. Id selector is unique and only refers to one element. Class on the other hand is used to select a bunch of elements, class selectors are good since we can change the entire selection through class such as background colors, font family, size, font color among other things.  </p>
+
+    <a href="#recap"> Go to recap </a>
+</p>
+
+<hr> 
+
+<p id="image-link-combo-explanation">
+    Now lets us turn an image into a link. 
+    <a href="#"> <img src="https://cdn.pixabay.com/photo/2019/09/25/15/28/freedom-4503959_960_720.jpg" > </a>
+    Below is a link of opening link in a new tab.  
+    <a href="https://cdn.pixabay.com/photo/2019/09/25/15/28/freedom-4503959_960_720.jpg" target="blank"> <img src="https://cdn.pixabay.com/photo/2019/09/25/15/28/freedom-4503959_960_720.jpg" > </a>
+</p>
+
+<p id="recap"> <h2> RECAP</h2></p>
+<a href="#images-explanation"> Images </a> 
+<a href="#link-explanation"> Links </a> 
+<a href="#image-link-combo-explanation"> Image and link combo explanation </a>
+
+
+
+</body>
+</html>

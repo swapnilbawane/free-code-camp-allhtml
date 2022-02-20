@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This page tests the basic CSS features </title>
+     
+    
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+        h2 {
+            color: blue;
+        }
+
+        .blueviolet-text {
+            color:blueviolet;
+        }
+
+        .fontsize-p {
+            font-size: 10px;
+        }
+
+        .fontfamily-p {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .small-image {
+            width: 500px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h2> Explore the CSS features here. </h2>
+    <p> Here we will first check inline CSS styling and then use style tag so also link an external stylesheet.</p>
+    <p style="color:red;"> This text is red in color. Note that it is a good practice to end inline style declarations with a ; . </p>
+
+    <p class="blueviolet-text"> Note that it's important to have both opening and closing curly braces ({ and }) around each element's style rule(s). You also need to make sure that your element's style definition is between the opening and closing style tags. Finally, be sure to add a semicolon to the end of each of your element's style rules.   
+    </p>
+    
+    <p class="fontfamily-p">
+        Please note elements are written as it is in style rules. that means you can write style rules for all h2 or p or ul elements. 
+        But suppose if you want to only specifically write a style rule for a particular thing then you need to add an id to identify it. 
+        A class is ideal if a group of things should have same style rule. For example if you would like a particular background color for certain blocks then simply use the class name and it will automatically include style rules for the particular class. 
+    </p>
+
+<p class="blueviolet-text fontsize-p"> 
+    Classes are reusable styles that can be added to HTML elements.
+</p>
+
+<hr>
+
+<p>
+    To import a Google Font, you can copy the font's URL from the Google Fonts library and then paste it in your HTML. For this challenge, we'll import the Lobster font. To do this, copy the following code snippet and paste it into the top of your code editor (before the opening style element):
+
+    Now you can use the Lobster font in your CSS by using Lobster as the FAMILY_NAME as in the following example:
+
+    font-family: FAMILY_NAME, GENERIC_NAME;
+
+    The GENERIC_NAME is optional, and is a fallback font in case the other specified font is not available. This is covered in the next challenge.
+
+    Family names are case-sensitive and need to be wrapped in quotes if there is a space in the name. For example, you need quotes to use the "Open Sans" font, but not to use the Lobster font.
+
+    Generic font family names are not case-sensitive. Also, they do not need quotes because they are CSS keywords.
+
+    If you have the Lobster font installed on your computer, you won't see the degradation because your browser is able to find the font.
+
+</p>
+
+<img src="images/sample.jpg" class="small-image"> 
+
+</body>
+</html>
