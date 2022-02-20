@@ -5,12 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Border Padding Margin</title>
+
+<style>
+.box {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    text-align: center;
+}
+
+.padding1 {
+    /* padding is between text and border, if no border then the text will be floating so border allows text to look better */
+    padding: 20px;
+    text-align:left;
+}
+
+.padding-play {
+    /* Sometimes you will want to customize an element so that it has different amounts of padding on each of its sides.
+
+CSS allows you to control the padding of all four individual sides of an element with the padding-top, padding-right, padding-bottom, and padding-left properties. */
+
+/* Instead of specifying an element's padding-top, padding-right, padding-bottom, and padding-left properties individually, you can specify them all in one line, like this:
+
+padding: 10px 20px 10px 20px;
+These four values work like a clock: top, right, bottom, left, and will produce the exact same result as using the side-specific padding instructions.
+
+padding: 20px means all sides 20px apply
+padding: 20px 30px means top bottom 20px and right left 30px 
+padding: 20px 30px 40px 10px means top right bottom and left sides padding. 
+  */
+
+  /* Shorthand vs longhand syntax 
+  Shorthand is simply mentioning 20px ie units where sides are assumed as per convention. 
+  Longhand is explicitly mentioning if it is left right top or bottom. Longhand is great for code readability. */
+    padding: 20px;
+}
+.margin1 {
+    /* Margin is applied to all sides. An element's margin controls the amount of space between an element's border and surrounding elements.
+    If you set an element's margin to a negative value, the element will grow larger.  */
+
+    /* Instead of specifying an element's margin-top, margin-right, margin-bottom, and margin-left properties individually, you can specify them all in one line, like this:
+
+    margin: 10px 20px 10px 20px;
+    These four values work like a clock: top, right, bottom, left, and will produce the exact same result as using the side-specific margin instructions.
+
+ */
+    margin: 10px;
+}
+
+.margin2 {
+    /* Negative margin means it goes beyond and becomes larger and merges with other elements or appears to be superimposed on other elements */
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: -15px;
+}
+</style>
+
 </head>
 <body>
     <p>
         Three important properties control the space that surrounds each HTML element: padding, border, and margin.
     </p>
 
-    
+    <p class="box padding-play"> A text </p>
+    <p class="box padding1 margin2"> B text </p>
+    <p class="box margin1"> C text </p>
 </body>
 </html>
