@@ -30,14 +30,36 @@
 
         .small-image {
             width: 500px;
+            
         }
+
+        .thin-red-border {
+            /* adds border with width, color, style and specific radius */
+            border-color: red;
+            border-width: 5px;
+            border-style:dashed;
+            border-radius:5em 0 5em 0;
+        }
+
+        .border-radius {
+            /* rounded image syntax */
+            border-radius: 50px;
+        }
+
+        .border-px {
+            /* circular image syntax */
+            border-radius:50%;
+        }
+
 
     </style>
 
 </head>
 <body>
     <h2> Explore the CSS features here. </h2>
+
     <p> Here we will first check inline CSS styling and then use style tag so also link an external stylesheet.</p>
+
     <p style="color:red;"> This text is red in color. Note that it is a good practice to end inline style declarations with a ; . </p>
 
     <p class="blueviolet-text"> Note that it's important to have both opening and closing curly braces ({ and }) around each element's style rule(s). You also need to make sure that your element's style definition is between the opening and closing style tags. Finally, be sure to add a semicolon to the end of each of your element's style rules.   
@@ -49,13 +71,13 @@
         A class is ideal if a group of things should have same style rule. For example if you would like a particular background color for certain blocks then simply use the class name and it will automatically include style rules for the particular class. 
     </p>
 
-<p class="blueviolet-text fontsize-p"> 
+    <p class="blueviolet-text fontsize-p"> 
     Classes are reusable styles that can be added to HTML elements.
-</p>
+    </p>
 
-<hr>
+    <hr>
 
-<p>
+    <p>
     To import a Google Font, you can copy the font's URL from the Google Fonts library and then paste it in your HTML. For this challenge, we'll import the Lobster font. To do this, copy the following code snippet and paste it into the top of your code editor (before the opening style element):
 
     Now you can use the Lobster font in your CSS by using Lobster as the FAMILY_NAME as in the following example:
@@ -70,9 +92,32 @@
 
     If you have the Lobster font installed on your computer, you won't see the degradation because your browser is able to find the font.
 
-</p>
+    </p>
 
-<img src="images/sample.jpg" class="small-image"> 
+<img src="images/sample.jpg" class="small-image thin-red-border"> 
+<img src="images/sample.jpg" class="small-image border-radius"> 
+<img src="images/sample.jpg" class="small-image border-px"> 
+
+    <p> 
+    Remember that you can apply multiple classes to an element using its class attribute, by separating each class name with a space. For example:
+
+< img class="class1 class2">
+    </p>
+
+    <p>
+You can specify a border-radius with pixels. Give your photo a border-radius of 10px.
+
+Note: This challenge allows for multiple possible solutions. For example, you may add border-radius to either the .thick-green-border class or the .smaller-image class.
+    </p>
+
+    <p>
+    Make Circular Images with a border-radius
+    In addition to pixels, you can also specify the border-radius using a percentage.
+
+    Give your photo a border-radius of 50%.
+    </p>
+
+    
 
 </body>
 </html>
