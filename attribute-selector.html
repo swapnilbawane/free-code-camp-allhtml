@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's explore attribute selectors. </title>
+    <style>
+        [type="radio"] { 
+            margin: 20px 0px 20px 0px;
+        }
+
+        label {
+            margin-left: 10px;
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+
+    <h2> This will explore attribute selectors </h2>
+<p>
+    You have been adding id or class attributes to elements that you wish to specifically style. These are known as ID and class selectors. There are other CSS Selectors you can use to select custom groups of elements to style.
+    For this challenge, you will use the [attr=value] attribute selector to style the checkboxes.
+    This selector matches and styles elements with a specific attribute value. For example, the below code changes the margins of all elements with the attribute type and a corresponding value of radio:
+
+[ type='radio' ] {
+  margin: 20px 0px 20px 0px;
+}
+</p> 
+
+
+    <!-- Radio buttons, checkboxes -->
+<p> 
+    
+<hr>
+    <input type="radio" id="option-one" value="optionone" name="options" checked>
+    <label for="option-one"> Option one </label>
+    
+    <input type="radio" id="option-two" value="optiontwo" name="options">
+    <label for="option-two"> Option two </label>
+
+    <input type="radio" id="option-three" value="optionthree" name="options">
+    <label for="option-three"> Option three </label>
+  
+    <label for="option-four"> <input type="radio" id="option-four" value="optionfour" name="options"> Option four </label>
+
+</p>
+
+
+
+</body>
+</html>
