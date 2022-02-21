@@ -4,14 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Let's explore attribute selectors. </title>
+    <title>Let's explore attribute selectors, precedence of style declaration, inline, class, id, body inheritance, !important keyword. </title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+        body {
+            background-color:bisque;
+            font-family: 'Montserrat', sans-serif;
+            color:brown;
+        }
+
         [type="radio"] { 
             margin: 20px 0px 20px 0px;
         }
 
         label {
             margin-left: 10px;
+        }
+
+        .bv-text {
+            color:blueviolet;
+        }
+
+        .cb-text {
+            color:cadetblue !important;
+        }
+
+        #black-text {
+            color: rgb(0, 0, 0) ;
         }
     </style>
 
@@ -21,7 +41,9 @@
 
 <body>
 
-    <h2> This will explore attribute selectors </h2>
+<h2> This will explore attribute selectors, precedence of style declaration, inline, class, id, body inheritance, !important keyword.  </h2>
+
+    
 <p>
     You have been adding id or class attributes to elements that you wish to specifically style. These are known as ID and class selectors. There are other CSS Selectors you can use to select custom groups of elements to style.
     For this challenge, you will use the [attr=value] attribute selector to style the checkboxes.
@@ -32,11 +54,17 @@
 }
 </p> 
 
+<hr> 
+
+<p class="bv-text"> This is a test paragraph. It shows that class applied here overrides the style declaration for body. Remember ID has more specificity than class and class has more over default key elements like h2, ul and others.  </p>
+
+<hr>
+
 
     <!-- Radio buttons, checkboxes -->
 <p> 
     
-<hr>
+
     <input type="radio" id="option-one" value="optionone" name="options" checked>
     <label for="option-one"> Option one </label>
     
@@ -49,6 +77,22 @@
     <label for="option-four"> <input type="radio" id="option-four" value="optionfour" name="options"> Option four </label>
 
 </p>
+
+<hr>
+
+<p id="black-text" class="bv-text cb-text" >
+    This tells more about how one declaration acts over another. 
+    For eg. there can be default body declaration, then h2 type elements declaration then id and class declaration or attribute type declaration. Each of which can be again overriden for a specific effect to the element. 
+    The last declaration is considered final here. 
+
+    However, the order of the class declarations in the < style > section is what is important. The second declaration will always take precedence over the first. Because .blue-text is declared second, it overrides the attributes of .pink-text. 
+
+    <strong> Browsers read CSS from top to bottom in order of their declaration. That means that, in the event of a conflict, the browser will use whichever CSS declaration came last. FINALLY,  even class declarations can be overriden by ID selectors. ID selectors have highest specificity.  </strong>
+
+    See here what we first did was, gave class styles and then id style but when we included !important to one of the style declaration through cb-text class, even the id declaration was overwritten. Important forces styles over specificity, meaning it has highest precedence. 
+</p>
+
+<h3 class="cb-text"> This is to understand that we can override style declaration using inline styles. </h3>
 
 
 
