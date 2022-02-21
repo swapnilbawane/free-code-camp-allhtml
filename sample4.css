@@ -1,0 +1,33 @@
+p {
+    position: relative;
+    left: 30px;
+    /* right top bottom other attributes */
+}
+
+.navlink {
+    position: absolute;
+    top:10px;
+    right:10px;
+}
+
+.navlink2 {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color:bisque;
+}
+
+.float1 {
+    width: 40%;
+    float: left;
+}
+
+.float2 {
+    width: 50%;
+    float: right;
+}
+
+aside,section {
+    float: right;
+    width: 30px;
+}
