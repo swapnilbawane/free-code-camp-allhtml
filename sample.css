@@ -1,0 +1,18 @@
+:root {
+    /* Just comment one of the variables below as color-two and see how the fallback value is put to red. */
+    --color-one:beige;
+    --color-two: black;
+}
+
+.para { 
+    color: var(--color-two,red);
+    background-color: var(--color-one);
+}
+
+#link-one {
+    color: red;
+}
+
+.overwrite-var {
+    --color-two: brown;
+}

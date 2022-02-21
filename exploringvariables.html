@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let us explore variables here. </title>
+
+    <link rel="stylesheet" href="sample.css">
+    
+</head>
+
+<body>
+<h2> Let us explore variables here. </h2>   
+
+<p class="para overwrite-var">  
+Create a custom CSS Variable.
+To create a CSS variable, you just need to give it a name with two hyphens in front of it and assign it a value like this:
+--penguin-skin: gray;
+This will create a variable named --penguin-skin and assign it the value of gray. Now you can use that variable elsewhere in your CSS to change the value of other elements to gray. 
+
+Read more <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties" id="link-one"> about declaring variables </a>
+
+    <p>
+    Here they talk about custom property fallback values and how things are inherited from the defined code. Also if not defined then default values maybe taken. <strong>CSS HTML reset</strong> is actually resetting the default definitions. 
+    </p>
+
+    <p>
+    <strong>Invalid variables</strong> is when wrong values are put up. like for color 16px is put then it will put default values but here is a catch. If you had written color: 16px without any variable substitutes, then it was a syntax error. The previous declaration will then be used.
+    </p>
+
+    <p>
+    IMPORTANT: 
+    While a syntax error in a CSS property / value pair will lead to the line being ignored, using a cascaded value, invalid substitution -- using a custom property value that is invalid -- is not ignored, leading to the value to be inherited.
+    </p>
+
+    <p>
+        When using your variable as a CSS property value, you can attach a fallback value that your browser will revert to if the given variable is invalid.
+
+        Note: This fallback is not used to increase browser compatibility, and it will not work on IE browsers. Rather, it is used so that the browser has a color to display if it cannot find your variable.
+    </p>
+
+    <p>
+    <strong>Improve Compatibility with Browser Fallbacks </strong>
+    When working with CSS you will likely run into browser compatibility issues at some point. This is why it's important to provide browser fallbacks to avoid potential problems.
+    </p>
+
+    <p>
+    When your browser parses the CSS of a webpage, it ignores any properties that it doesn't recognize or support. For example, if you use a CSS variable to assign a background color on a site, Internet Explorer will ignore the background color because it does not support CSS variables. In that case, the browser will use whatever value it has for that property. If it can't find any other value set for that property, it will revert to the default value, which is typically not ideal.
+    </p>
+    
+    <p>
+    This means that if you do want to provide a browser fallback, it's as easy as providing another more widely supported value immediately before your declaration. That way an older browser will have something to fall back on, while a newer browser will just interpret whatever declaration comes later in the cascade.
+    </p>
+
+    <p>
+
+    <strong>Inherit CSS Variables</strong>
+    When you create a variable, it is available for you to use inside the selector in which you create it. It also is available in any of that selector's descendants. This happens because CSS variables are inherited, just like ordinary properties.
+
+    <p>
+    To make use of inheritance, CSS variables are often defined in the :root element.
+    </p>
+
+    <p>
+    :root is a pseudo-class selector that matches the root element of the document, usually the html element. By creating your variables in :root, they will be available globally and can be accessed from any other selector in the style sheet.
+    </p>
+
+    </p>
+
+    <p>
+    <strong> Change a variable for a specific area: Overwriting variables. </strong>
+    When you create your variables in :root they will set the value of that variable for the whole page.
+
+    You can then over-write these variables by setting them again within a specific element.
+    </p>
+
+
+</p>
+
+</body>
+</html>
