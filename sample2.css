@@ -1,0 +1,40 @@
+.cardSpecs {
+    border: 2px solid;
+    margin: 10px 5px;
+    padding: 4px;
+    width: 200px;
+}   
+
+.cardContent {
+    padding: 10px;
+}
+
+.para1 {
+    text-align: center;
+}
+
+.para2 {
+    /* text-align: left; */
+    /* text-align: right; */
+    text-align: justify;
+}
+
+img {
+    width: 100px;
+    
+}
+
+.height-img 
+{
+    height: 200px;
+}
+
+.bg-color-test {
+    background-color: rgba(45,45,45,0.1);
+}
+
+.font-size-test
+{
+    font-size: 27px;
+}
+
